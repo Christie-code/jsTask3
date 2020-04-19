@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<title>Function Parameter</title>
+			<script>
+//declare a function 
+ function divisible(parameter) {
+   const data=[];
+   for (i=1; i<=parameter; i++) {
+     let tracker='';
+     if (i%2===0) {
+       if (tracker.length!==0) {
+         tracker= tracker +'-'
+       }
+       tracker=tracker+"yu"
+     }
+     if (i%3===0) {
+       if (tracker.length!==0) {
+         tracker= tracker +'-'
+       }
+       tracker=tracker+"gi"
+     }
+     if (i%5===0) {
+       if (tracker.length!==0) {
+         tracker= tracker +'-'
+       }
+       tracker=tracker+"oh"
+     }
+     if (i%2 !==0 && i%3!==0 && i%5!==0) {
+        tracker=i;
+     }
+      data.push(tracker);
+   }
+   console.log(data);
+   return data;
+ }
+ divisible(100);
+ divisible(30);
+			
+			</script>
+		</head>
+		<body></body>
+	</html> 
